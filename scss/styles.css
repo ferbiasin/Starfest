@@ -1,0 +1,446 @@
+@charset "UTF-8";
+/**   ----------------  COLORES  ---------------**/
+/**   ----------------  MEDIDAS DE LETRAS  ---------------**/
+/**   ----------------  GENERAL  ---------------**/
+* {
+  margin: 0%;
+  padding: 0%;
+}
+
+body {
+  background-color: #000000 !important;
+}
+
+html {
+  font-family: raleway;
+}
+
+h1 {
+  font-family: Nanum Myeongjo;
+}
+
+#texto-bienvenida {
+  color: #C68624;
+}
+
+p {
+  color: #ffffff;
+  font-family: raleway;
+}
+
+ul {
+  color: #C68624;
+}
+
+li {
+  color: #C68624;
+  font-family: raleway;
+  list-style: none;
+  font-weight: bold;
+  display: inline-block;
+}
+
+a {
+  text-decoration: none;
+  color: #C68624;
+}
+
+.texto-secciones {
+  text-align: center;
+  color: #C68624;
+}
+
+form {
+  color: #ffffff;
+}
+
+/**     ----------- GALERÍA  -----------   **/
+.sectiongalery {
+  background-color: #ffffff;
+  width: 95%;
+  height: 2580px;
+  margin: 2% 2% 2% 2.5%;
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.sectores {
+  background-color: #000000;
+  width: 500px;
+  height: 600px;
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+  color: white;
+  display: inline-block;
+}
+
+.fotosgaleria {
+  width: 580px;
+  height: 600px;
+  margin: 10px;
+  text-align: center;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 50px;
+}
+
+.efecto-galeria :hover {
+  margin: none;
+  padding: none;
+  -webkit-transition: 2s;
+  transition: 2s;
+  -webkit-transform: rotateY(360deg);
+          transform: rotateY(360deg);
+}
+
+.sectores__titulo {
+  color: white;
+}
+
+.sectores__titulo--especial {
+  color: #C68624;
+}
+
+.sectores__texto {
+  color: white;
+}
+
+.sectores__texto--especial {
+  color: #C68624;
+}
+
+.sectores__boton {
+  width: 150px;
+  height: 40px;
+  background-color: #C68624;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.articleinicio {
+  background-color: #000000;
+}
+
+.btn-primary {
+  background-color: #C68624 !important;
+  border-color: #C68624 !important;
+  margin: 2% 0% 1% 44%;
+}
+
+@media (max-width: 768px) {
+  .btn-primary {
+    margin: 5% 0% 5% 30%;
+  }
+}
+
+.btn {
+  text-decoration: none !important;
+}
+
+#container {
+  background-color: black;
+  margin: none;
+  padding: none;
+}
+
+.jumbotron {
+  margin: 0rem !important;
+}
+
+/**     ----------- SERVICIOS  -----------   **/
+.titulo-adicionales {
+  color: #C68624;
+  text-align: center;
+}
+
+.adicionales :hover {
+  background-color: #C68624;
+  color: #000000;
+  -webkit-transition: 2s;
+  transition: 2s;
+  -webkit-transform: skewX(-180deg);
+          transform: skewX(-180deg);
+}
+
+.box-contenedor {
+  background-color: #ffffff;
+  margin: 2% 5% 2% 5%;
+  border-radius: 24px;
+}
+
+.box-contenedor .menu-acordeon {
+  padding-left: 2%;
+  padding-right: 2%;
+}
+
+.box-contenedor .menu-acordeon .card {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.card-header {
+  padding: 0 0 0 0 !important;
+}
+
+#box-negro {
+  background-color: #000000;
+  margin: none;
+  padding: none;
+}
+
+#box-amarillo {
+  background-color: #C68624;
+  margin: none;
+  padding: none;
+}
+
+.titulo-box {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.titulo-box :hover {
+  font-size: 1.8rem;
+}
+
+.texto-box {
+  font-size: 1.2rem;
+  color: #000000;
+}
+
+.box-contenedor-nosotros {
+  background-color: #C68624;
+  margin: 2% 5% 2% 5%;
+  border-radius: 24px;
+}
+
+.texto-nosotros {
+  color: #000000;
+  font-size: 1.1rem;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.titulo-nosotros {
+  text-align: center;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.contenedor-nosotros {
+  margin-bottom: 0;
+}
+
+.listado-nosotros {
+  font-style: #000000;
+  color: #000000;
+  font-size: 1.2rem;
+  display: block;
+}
+
+.contamos-art1 {
+  display: inline-block;
+}
+
+.contamos-art2 {
+  display: inline-block;
+  float: right;
+}
+
+.padding-contamos {
+  padding: 0 20% 0 20%;
+}
+
+@media (max-width: 1050px) {
+  .padding-contamos {
+    padding: 0 15% 0 15%;
+  }
+}
+
+@media (max-width: 900px) {
+  .padding-contamos {
+    padding: 0 10% 0 10%;
+  }
+}
+
+@media (max-width: 805px) {
+  .padding-contamos {
+    padding: 0 0 0 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .contamos-art2 {
+    float: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .padding-contamos {
+    padding: 0 0 0 30%;
+  }
+}
+
+@media (max-width: 600px) {
+  .padding-contamos {
+    padding: 0 0 0 20%;
+  }
+}
+
+@media (max-width: 480px) {
+  .padding-contamos {
+    padding: 0 0 0 15%;
+  }
+}
+
+@media (max-width: 480px) {
+  .padding-contamos {
+    padding: 0 0 0 0;
+  }
+}
+
+.botones-precios {
+  margin: 0 0 0 13%;
+  background-color: #000000;
+  color: #ffffff;
+  width: 75%;
+  height: 50px;
+}
+
+#botones-precios {
+  border-radius: 10px;
+}
+
+.box-contenedor-servicios {
+  background-color: #C68624;
+  margin: 2% 5% 2% 5%;
+  border-radius: 24px;
+}
+
+.texto-servicios {
+  width: 73%;
+  margin: 0 0 0 14%;
+}
+
+#margen-boton {
+  margin-bottom: 0;
+}
+
+.titulo-precios-salon {
+  color: #C68624;
+  text-align: center;
+}
+
+.texto-no-incluye {
+  color: #000000;
+}
+
+/**     ------------   HEADER   -----------  **/
+header {
+  background-color: black;
+}
+
+.logoheader {
+  padding: 0 0 0 1.5%;
+}
+
+@media (max-width: 768px) {
+  .logo1header {
+    width: 100px;
+    height: 47px;
+  }
+}
+
+.menu {
+  list-style: none;
+  margin: 1.5% 0 0 0;
+  padding: 0 2% 0 0;
+  float: right;
+}
+
+@media (max-width: 768px) {
+  .menu {
+    font-size: 0.8rem;
+    margin: 4% 0% 0 0;
+    padding: 0 2% 0 0;
+  }
+}
+
+.menu li a {
+  padding: 10px 20px;
+  position: relative;
+  float: left;
+  background-color: #000000;
+  color: #C68624;
+}
+
+@media (max-width: 768px) {
+  .menu li a {
+    padding: 0 2% 0 0;
+  }
+}
+
+.menu li :hover {
+  background-color: #C68624;
+  color: #000000;
+  text-decoration: none;
+}
+
+/**     ----------- FOOTER  -----------   **/
+footer {
+  background-color: black;
+}
+
+.espaciofooter {
+  background-color: #C68624;
+  color: #C68624;
+  font-size: 0.1rem;
+}
+
+.logofooter {
+  padding: 0 0 0 37%;
+}
+
+@media (max-width: 768px) {
+  .logofooter {
+    padding: 0 0 0 5%;
+    width: 200px;
+    height: 93px;
+  }
+}
+
+.menufooter {
+  list-style: none;
+  padding: 2% 0 0 5%;
+}
+
+.menufooter li a {
+  margin: 0 100px 20px 100px;
+  position: relative;
+  float: left;
+  background-color: #000000;
+  color: #C68624;
+}
+
+@media (max-width: 768px) {
+  .menufooter li a {
+    margin: 10px 8px 20px 8px;
+  }
+}
+
+.contactofooter {
+  text-align: center;
+  color: white;
+}
+/*# sourceMappingURL=styles.css.map */
