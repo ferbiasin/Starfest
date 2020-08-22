@@ -32,6 +32,8 @@ h1{
 
 #texto-bienvenida{
     color: #C68624;
+    font-size: 3rem;
+    font-weight: bolder;
 }
 
 p{
@@ -68,6 +70,37 @@ a{
 
 
 form{
+    color: #ffffff;
+}
+
+
+
+  
+  div video {
+    position: absolute;
+    width: 100%;
+    z-index: 0;
+  }
+  
+  div .container {
+    position: relative;
+    z-index: 2;
+    color: #C68624;
+  }
+  
+
+#present{
+    width: 100%;
+}
+
+.cont-present{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+.sobre-presentacion{
+    position: absolute;
     color: #ffffff;
 }
 
@@ -383,3 +416,38 @@ border-radius: 10px;
 .texto-no-incluye{
     color: $black;
 }
+
+
+
+#formulario{
+    float: right;
+    background-color: transparent;
+}
+
+.mapa{
+    margin-top: 2%;
+}
+
+.fomrulario-contacto{
+    margin-top: 1%;
+}
+
+.titulos-contacto{
+    color: $yellow;
+}
+
+
+
+#btn-contacto{
+    color: $yellow;
+    border-color: $yellow;
+    border-radius: 24px;
+}
+
+
+
+#tuco{
+    border-radius: 8px;
+    margin-left: 8px;
+}
+
