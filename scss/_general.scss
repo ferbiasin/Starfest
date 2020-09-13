@@ -464,8 +464,8 @@ h6 {
 
 @media (max-width: 480px) {
   .iconos-nosotros {
-    height: 250px;
-    width: 250px !important;
+    height: 100px;
+    width: 100px !important;
   }
 }
 
@@ -473,6 +473,11 @@ h6 {
   padding-left: 20%;
 }
 
+@media (max-width: 480px) {
+  #icono-nosotros {
+    padding-left: 10%;
+  }
+}
 /**     ----------- CONTACTO  -----------   **/
 #formulario {
   float: right;
