@@ -19,23 +19,17 @@ h1 {
   font-family: Nanum Myeongjo;
 }
 
-#texto-bienvenida {
-  color: #C68624;
-  font-size: 3rem;
-  font-weight: bolder;
-}
-
 p {
   color: #ffffff;
   font-family: raleway;
 }
 
 ul {
-  color: #C68624;
+  color: #c68624;
 }
 
 li {
-  color: #C68624;
+  color: #c68624;
   font-family: raleway;
   list-style: none;
   font-weight: bold;
@@ -44,16 +38,37 @@ li {
 
 a {
   text-decoration: none;
-  color: #C68624;
+  color: #c68624;
+}
+
+/**   ----------------  TÍTULO DE SECCIONES  ---------------**/
+.logo-secciones {
+  width: 50px;
+  height: 50px;
 }
 
 .texto-secciones {
   text-align: center;
-  color: #C68624;
+  color: #c68624;
 }
 
-form {
-  color: #ffffff;
+/**   ----------------  INDEX  ---------------**/
+#texto-bienvenida {
+  color: #c68624;
+  font-size: 3rem;
+  font-weight: bolder;
+}
+
+@media (max-width: 768px) {
+  #texto-bienvenida {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 400px) {
+  #p-inicio {
+    font-size: 1rem;
+  }
 }
 
 div video {
@@ -65,7 +80,7 @@ div video {
 div .container {
   position: relative;
   z-index: 2;
-  color: #C68624;
+  color: #c68624;
 }
 
 #present {
@@ -83,87 +98,13 @@ div .container {
   color: #ffffff;
 }
 
-/**     ----------- GALERÍA  -----------   **/
-.sectiongalery {
-  background-color: #ffffff;
-  width: 95%;
-  height: 2580px;
-  margin: 2% 2% 2% 2.5%;
-  padding: 10px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-.sectores {
-  background-color: #000000;
-  width: 500px;
-  height: 600px;
-  margin: 10px;
-  padding: 10px;
-  text-align: center;
-  color: white;
-  display: inline-block;
-}
-
-.fotosgaleria {
-  width: 580px;
-  height: 600px;
-  margin: 10px;
-  text-align: center;
-  color: white;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  border-radius: 50px;
-}
-
-.efecto-galeria :hover {
-  margin: none;
-  padding: none;
-  -webkit-transition: 2s;
-  transition: 2s;
-  -webkit-transform: rotateY(360deg);
-          transform: rotateY(360deg);
-}
-
-.sectores__titulo {
-  color: white;
-}
-
-.sectores__titulo--especial {
-  color: #C68624;
-}
-
-.sectores__texto {
-  color: white;
-}
-
-.sectores__texto--especial {
-  color: #C68624;
-}
-
-.sectores__boton {
-  width: 150px;
-  height: 40px;
-  background-color: #C68624;
-  color: #ffffff;
-  font-weight: bold;
-}
-
 .articleinicio {
   background-color: #000000;
 }
 
 .btn-primary {
-  background-color: #C68624 !important;
-  border-color: #C68624 !important;
+  background-color: #c68624 !important;
+  border-color: #c68624 !important;
   margin: 2% 0% 1% 44%;
 }
 
@@ -187,14 +128,147 @@ div .container {
   margin: 0rem !important;
 }
 
+/**     ----------- GALERÍA  -----------   **/
+/* Style the Image Used to Trigger the Modal */
+.articulo-galeria {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 5% 0 5%;
+}
+
+#myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#myImg:hover {
+  opacity: 0.7;
+}
+
+.fotos-galeria {
+  width: 200px;
+  height: 200px;
+  margin: 10px;
+}
+
+.fotos-galeria:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 50px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+/* Modal Content (Image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 500px;
+  max-height: 500px;
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content,
+#caption {
+  -webkit-animation-name: zoom;
+          animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+          animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes zoom {
+  from {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px) {
+  .modal-content {
+    width: 100%;
+  }
+}
+
 /**     ----------- SERVICIOS  -----------   **/
 .titulo-adicionales {
-  color: #C68624;
+  color: #c68624;
   text-align: center;
 }
 
 .adicionales :hover {
-  background-color: #C68624;
+  background-color: #c68624;
   color: #000000;
   -webkit-transition: 2s;
   transition: 2s;
@@ -229,7 +303,7 @@ div .container {
 }
 
 #box-amarillo {
-  background-color: #C68624;
+  background-color: #c68624;
   margin: none;
   padding: none;
 }
@@ -248,8 +322,57 @@ div .container {
   color: #000000;
 }
 
+#palabra-larga {
+  white-space: normal;
+}
+
+.botones-precios {
+  margin: 0 0 0 13%;
+  background-color: #000000;
+  color: #ffffff;
+  width: 75%;
+  height: 50px;
+}
+
+#botones-precios {
+  border-radius: 10px;
+}
+
+.box-contenedor-servicios {
+  background-color: #c68624;
+  margin: 2% 5% 2% 5%;
+  border-radius: 24px;
+}
+
+.texto-servicios {
+  width: 73%;
+  margin: 0 0 0 14%;
+}
+
+#margen-boton {
+  margin-bottom: 0;
+}
+
+h6 {
+  font-weight: bolder;
+}
+
+#sub-titulo-servicios {
+  font-size: 1.1rem;
+}
+
+.titulo-precios-salon {
+  color: #c68624;
+  text-align: center;
+}
+
+.texto-no-incluye {
+  color: #000000;
+}
+
+/**     ----------- NOSOTROS  -----------   **/
 .box-contenedor-nosotros {
-  background-color: #C68624;
+  background-color: #c68624;
   margin: 2% 5% 2% 5%;
   border-radius: 24px;
 }
@@ -274,8 +397,9 @@ div .container {
 .listado-nosotros {
   font-style: #000000;
   color: #000000;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   display: block;
+  font-weight: normal;
 }
 
 .contamos-art1 {
@@ -339,42 +463,36 @@ div .container {
   }
 }
 
-.botones-precios {
-  margin: 0 0 0 13%;
-  background-color: #000000;
-  color: #ffffff;
-  width: 75%;
-  height: 50px;
+.iconos-nosotros {
+  height: 200px;
 }
 
-#botones-precios {
-  border-radius: 10px;
+@media (max-width: 768px) {
+  .iconos-nosotros {
+    height: 150px;
+    width: 150px !important;
+  }
 }
 
-.box-contenedor-servicios {
-  background-color: #C68624;
-  margin: 2% 5% 2% 5%;
-  border-radius: 24px;
+@media (max-width: 580px) {
+  .iconos-nosotros {
+    height: 120px;
+    width: 120px !important;
+  }
 }
 
-.texto-servicios {
-  width: 73%;
-  margin: 0 0 0 14%;
+@media (max-width: 480px) {
+  .iconos-nosotros {
+    height: 250px;
+    width: 250px !important;
+  }
 }
 
-#margen-boton {
-  margin-bottom: 0;
+#icono-nosotros {
+  padding-left: 20%;
 }
 
-.titulo-precios-salon {
-  color: #C68624;
-  text-align: center;
-}
-
-.texto-no-incluye {
-  color: #000000;
-}
-
+/**     ----------- CONTACTO  -----------   **/
 #formulario {
   float: right;
   background-color: transparent;
@@ -389,16 +507,16 @@ div .container {
 }
 
 .titulos-contacto {
-  color: #C68624;
+  color: #c68624;
 }
 
 #btn-contacto {
-  color: #C68624;
-  border-color: #C68624;
+  color: #c68624;
+  border-color: #c68624;
   border-radius: 24px;
 }
 
-#tuco {
+#motivo-consulta {
   border-radius: 8px;
   margin-left: 8px;
 }
@@ -408,12 +526,13 @@ header {
   background-color: black;
 }
 
-.logoheader {
-  padding: 0 0 0 1.5%;
+.logo-header {
+  width: 170px;
+  height: 80px;
 }
 
 @media (max-width: 768px) {
-  .logo1header {
+  .logo-header {
     width: 100px;
     height: 47px;
   }
@@ -439,7 +558,7 @@ header {
   position: relative;
   float: left;
   background-color: #000000;
-  color: #C68624;
+  color: #c68624;
 }
 
 @media (max-width: 768px) {
@@ -449,7 +568,7 @@ header {
 }
 
 .menu li :hover {
-  background-color: #C68624;
+  background-color: #c68624;
   color: #000000;
   text-decoration: none;
 }
@@ -460,8 +579,8 @@ footer {
 }
 
 .espaciofooter {
-  background-color: #C68624;
-  color: #C68624;
+  background-color: #c68624;
+  color: #c68624;
   font-size: 0.1rem;
 }
 
@@ -472,8 +591,6 @@ footer {
 @media (max-width: 768px) {
   .logofooter {
     padding: 0 0 0 5%;
-    width: 200px;
-    height: 93px;
   }
 }
 
@@ -487,7 +604,7 @@ footer {
   position: relative;
   float: left;
   background-color: #000000;
-  color: #C68624;
+  color: #c68624;
 }
 
 @media (max-width: 768px) {

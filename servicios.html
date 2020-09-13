@@ -1,363 +1,669 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>Starfest Multieventos | Servicios</title>
-    <meta name="description" content="Starfest Multieventos, conocé los servicios que tenemos para vos">
-    <meta name="keywords" content="Starfest, Multieventos, Servicios, Precios, Alquiler, Eventos">
-    <link rel="stylesheet" type="text/css" href="scss/styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&family=Raleway:ital,wght@0,300;0,400;0,600;0,700;0,900;1,400&display=swap" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <link rel="stylesheet" href="css/bootstrap.min.css"/>
-</head>
-<body>
+    <meta
+      name="description"
+      content="Starfest Multieventos, conocé los servicios que tenemos para vos"
+    />
+    <meta
+      name="keywords"
+      content="Starfest, Multieventos, Servicios, Precios, Alquiler, Eventos"
+    />
+    <link rel="stylesheet" type="text/css" href="scss/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&family=Raleway:ital,wght@0,300;0,400;0,600;0,700;0,900;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header>
+      <a class="logo-header" title="logo-starfest" href="index.html"
+        ><img
+          class="logo-header"
+          src="media/logo-starfest.png"
+          alt="logo-starfest"
+      /></a>
+      <ul class="menu">
+        <li><a href="servicios.html">Servicios</a></li>
+        <li><a href="galeria.html">Galería</a></li>
+        <li><a href="nosotros.html">Nosotros</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </header>
 
-<!-- HEADER -->
+    <!-- TITULO SECCIÓN -->
+    <h1 class="texto-secciones">
+      <img
+        class="logo-secciones"
+        src="media/estrella.png"
+        alt="logo-starfest"
+      />
+      Servicios
+    </h1>
 
-<header>
-    <a class="logoheader" title="logo-starfest" href="index.html"><img class="logo1header" width="170" height="80" src="media/logo-starfest.png" alt="logo-starfest"></a>
-
-    <ul class="menu">
-        <li> <a href="servicios.html">Servicios</a></li>
-        <li> <a href="galeria.html">Galería</a></li>
-        <li> <a href="nosotros.html">Nosotros</a></li>
-        <li> <a href="contacto.html">Contacto</a></li>
-    </ul>
-</header>
-
-
-
-<h1 class="texto-secciones">
-    <img width="50" height="50" src="media/estrella.png" alt="logo-starfest">
-    Servicios
-</h1>
-
-
-
-
-<div class="box-contenedor-servicios">
-<br>
-<div>    
-    <p id="margen-boton">
-        <button class="btn botones-precios titulo-box" id="botones-precios" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-            <h4>Salón Base</h4></button>
-    </p>
-    <div class="collapse" id="collapseExample">
-        <div class="card card-body texto-servicios">
+    <div class="box-contenedor-servicios">
+      <br />
+      <div>
+        <p id="margen-boton">
+          <button
+            class="btn botones-precios titulo-box"
+            id="botones-precios"
+            type="button"
+            data-toggle="collapse"
+            data-target="#collapseExample"
+            aria-expanded="false"
+            aria-controls="collapseExample"
+          >
+            <h4>Salón Base</h4>
+          </button>
+        </p>
+        <div class="collapse" id="collapseExample">
+          <div class="card card-body texto-servicios">
             <div>
-                <p class="titulo-precios-salon">Precio para 25 niños y 30 adultos. 
-                    <br>
-                    2 hs de duración</p>
-                <h6>Para los niños</h6>
+              <p class="titulo-precios-salon">
+                Precio para 20 niños y 30 adultos.
+                <br />
+                2 hs - 2 hs y 1/2 de duración
+              </p>
+              <h6 id="sub-titulo-servicios">PARA LOS NIÑOS:</h6>
 
-                
-                <ul class="contenedor-nosotros">
-                    <li class="listado-nosotros"> <img width="30" height="30" src="media/estrella.png" alt="logo-starfest"> Invitación digital y en papel</li>
-                    <li class="listado-nosotros"> <img width="30" height="30" src="media/estrella.png" alt="logo-starfest"> Piñata con caramelos</li>
-                    <li class="listado-nosotros"> <img width="30" height="30" src="media/estrella.png" alt="logo-starfest"> Globo y bolsita con golosinas para c/u</li>
-                </ul>
+              <ul class="contenedor-nosotros">
+                <li class="listado-nosotros">
+                  <img
+                    width="30"
+                    height="30"
+                    src="media/estrella.png"
+                    alt="logo-starfest"
+                  />
+                  Invitación digital y en papel
+                </li>
+                <li class="listado-nosotros">
+                  <img
+                    width="30"
+                    height="30"
+                    src="media/estrella.png"
+                    alt="logo-starfest"
+                  />
+                  Piñata con caramelos
+                </li>
+                <li class="listado-nosotros">
+                  <img
+                    width="30"
+                    height="30"
+                    src="media/estrella.png"
+                    alt="logo-starfest"
+                  />
+                  Globo y bolsita con golosinas para c/u
+                </li>
+              </ul>
+              <br />
+              <h6 id="sub-titulo-servicios">COMIDA:</h6>
 
-                <h6>COMIDA:</h6>
+              <ul class="contenedor-nosotros">
+                <li class="listado-nosotros">
+                  <img
+                    width="30"
+                    height="30"
+                    src="media/estrella.png"
+                    alt="logo-starfest"
+                  />
+                  Snacks: papas fritas, palitos y chizitos libre durante todo el
+                  evento
+                </li>
+                <li class="listado-nosotros">
+                  <img
+                    width="30"
+                    height="30"
+                    src="media/estrella.png"
+                    alt="logo-starfest"
+                  />
+                  Menú opcional entre pizzetas, panchos y nuggets al horno
+                </li>
+                <li class="listado-nosotros">
+                  <img
+                    width="30"
+                    height="30"
+                    src="media/estrella.png"
+                    alt="logo-starfest"
+                  />
+                  Bebidas: gaseosa, jugo y agua libre durante todo el evento
+                </li>
+              </ul>
 
-                
-                <ul class="contenedor-nosotros">
-                    <li class="listado-nosotros"> <img width="30" height="30" src="media/estrella.png" alt="logo-starfest"> Snacks: papas fritas, palitos y chizitos libre durante todo el evento.</li>
-                    <li class="listado-nosotros"> <img width="30" height="30" src="media/estrella.png" alt="logo-starfest"> Menú: pizzetas, panchos, nuggets al horno.</li>
-                    <li class="listado-nosotros"> <img width="30" height="30" src="media/estrella.png" alt="logo-starfest"> Bebidas: gaseosa, jugo y agua libre durante todo el evento</li>
-                </ul>
+              <br />
+              <h6 id="sub-titulo-servicios">VAJILLA:</h6>
 
+              <ul class="contenedor-nosotros">
+                <li class="listado-nosotros">
+                  <img
+                    width="30"
+                    height="30"
+                    src="media/estrella.png"
+                    alt="logo-starfest"
+                  />
+                  Servilletas, vasos, platos descartables, cucharitas y
+                  mobiliario para niños
+                </li>
+              </ul>
 
+              <br />
+              <h6 id="sub-titulo-servicios">JUEGOS:</h6>
 
-                <h6>VAJILLA: </h6>
+              <ul class="contenedor-nosotros">
+                <li class="listado-nosotros">
+                  <img
+                    width="30"
+                    height="30"
+                    src="media/estrella.png"
+                    alt="logo-starfest"
+                  />
+                  Incluye acceso a todos los espacios del salón
+                </li>
+              </ul>
 
-                
-                <ul class="contenedor-nosotros">
-                    <li class="listado-nosotros"> <img width="30" height="30" src="media/estrella.png" alt="logo-starfest"> Servilletas; vasos; platos descartables; cucharitas; mobiliario para niños.</li>
-                </ul>
+              <br />
+              <h6 id="sub-titulo-servicios">PARA LOS ADULTOS:</h6>
 
-                <h6>JUEGOS: </h6>
+              <ul class="contenedor-nosotros">
+                <li class="listado-nosotros">
+                  <img
+                    width="30"
+                    height="30"
+                    src="media/estrella.png"
+                    alt="logo-starfest"
+                  />
+                  Equipo de mate
+                </li>
+                <li class="listado-nosotros">
+                  <img
+                    width="30"
+                    height="30"
+                    src="media/estrella.png"
+                    alt="logo-starfest"
+                  />
+                  Te y Café
+                </li>
+                <li class="listado-nosotros">
+                  <img
+                    width="30"
+                    height="30"
+                    src="media/estrella.png"
+                    alt="logo-starfest"
+                  />
+                  Vasos y jarras
+                </li>
+              </ul>
 
-                
-                <ul class="contenedor-nosotros">
-                    <li class="listado-nosotros"> <img width="30" height="30" src="media/estrella.png" alt="logo-starfest"> Incluye acceso a todos los espacios del salón</li>
-                </ul>
+              <p class="texto-no-incluye">
+                (NO incluye la bebida y comida para adultos)
+              </p>
 
+              <h6 id="sub-titulo-servicios">PERSONAL:</h6>
 
-
-                <h6>Para los adultos</h6>
-
-                
-                <ul class="contenedor-nosotros">
-                    <li class="listado-nosotros"> <img width="30" height="30" src="media/estrella.png" alt="logo-starfest"> Equipo de mate</li>
-                    <li class="listado-nosotros"> <img width="30" height="30" src="media/estrella.png" alt="logo-starfest"> Te y Café</li>
-                    <li class="listado-nosotros"> <img width="30" height="30" src="media/estrella.png" alt="logo-starfest"> Vasos y jarras.</li>
-                </ul>
-
-
-<p class="texto-no-incluye">(NO incluye la bebida y comida para adultos)</p>
-
-
-
-<h6>Personal</h6>
-
-                
-<ul class="contenedor-nosotros">
-    <li class="listado-nosotros"> <img width="30" height="30" src="media/estrella.png" alt="logo-starfest"> 2 profesores de Ed. Física</li>
-    <li class="listado-nosotros"> <img width="30" height="30" src="media/estrella.png" alt="logo-starfest"> 1 coordinador de eventos</li>
-    <li class="listado-nosotros"> <img width="30" height="30" src="media/estrella.png" alt="logo-starfest"> 1 auxiliar de cocina</li>
-    <li class="listado-nosotros"> <img width="30" height="30" src="media/estrella.png" alt="logo-starfest"> 1 mesera</li>
-</ul>
-
-
-
-
+              <ul class="contenedor-nosotros">
+                <li class="listado-nosotros">
+                  <img
+                    width="30"
+                    height="30"
+                    src="media/estrella.png"
+                    alt="logo-starfest"
+                  />
+                  2 profesores de Ed. Física
+                </li>
+                <li class="listado-nosotros">
+                  <img
+                    width="30"
+                    height="30"
+                    src="media/estrella.png"
+                    alt="logo-starfest"
+                  />
+                  1 coordinador de eventos
+                </li>
+                <li class="listado-nosotros">
+                  <img
+                    width="30"
+                    height="30"
+                    src="media/estrella.png"
+                    alt="logo-starfest"
+                  />
+                  1 auxiliar de cocina
+                </li>
+                <li class="listado-nosotros">
+                  <img
+                    width="30"
+                    height="30"
+                    src="media/estrella.png"
+                    alt="logo-starfest"
+                  />
+                  1 mesera
+                </li>
+              </ul>
             </div>
+          </div>
         </div>
-    </div>
-</div>
-<br>
-<div>
-    <p id="margen-boton">
-        <button class="btn botones-precios titulo-box" id="botones-precios" type="button" data-toggle="collapse" data-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample2">
-            <h4>Salón Libre</h4></button>
-    </p>
-    <div class="collapse" id="collapseExample2">
-        <div class="card card-body texto-servicios">
-            <p class="titulo-precios-salon">Cupo para 100 personas entre adultos y niños.
-                <br>
-                3 hs de duración</p>
+      </div>
+      <br />
+      <div>
+        <p id="margen-boton">
+          <button
+            class="btn botones-precios titulo-box"
+            id="botones-precios"
+            type="button"
+            data-toggle="collapse"
+            data-target="#collapseExample2"
+            aria-expanded="false"
+            aria-controls="collapseExample2"
+          >
+            <h4>Salón Libre</h4>
+          </button>
+        </p>
+        <div class="collapse" id="collapseExample2">
+          <div class="card card-body texto-servicios">
+            <p class="titulo-precios-salon">
+              Cupo para 100 personas entre adultos y niños.
+              <br />
+              3 hs de duración
+            </p>
 
+            <h6 id="sub-titulo-servicios">PARA LOS ADULTOS:</h6>
 
+            <ul class="contenedor-nosotros">
+              <li class="listado-nosotros">
+                <img
+                  width="30"
+                  height="30"
+                  src="media/estrella.png"
+                  alt="logo-starfest"
+                />
+                Equipo de mate (libre)
+              </li>
+              <li class="listado-nosotros">
+                <img
+                  width="30"
+                  height="30"
+                  src="media/estrella.png"
+                  alt="logo-starfest"
+                />
+                Te y Café (libre)
+              </li>
+            </ul>
 
-                <h6>Para los adultos</h6>
+            <p class="texto-no-incluye">
+              (NO incluye la bebida y comida para adultos)
+            </p>
 
-                
-                <ul class="contenedor-nosotros">
-                    <li class="listado-nosotros"> <img width="30" height="30" src="media/estrella.png" alt="logo-starfest"> Equipo de mate (libre)</li>
-                    <li class="listado-nosotros"> <img width="30" height="30" src="media/estrella.png" alt="logo-starfest"> Te y Café (libre)</li>
-                </ul>
+            <h6 id="sub-titulo-servicios">VAJILLA:</h6>
 
-                <p class="texto-no-incluye">(NO incluye la bebida y comida para adultos)</p>
+            <ul class="contenedor-nosotros">
+              <li class="listado-nosotros">
+                <img
+                  width="30"
+                  height="30"
+                  src="media/estrella.png"
+                  alt="logo-starfest"
+                />
+                Servilletas, vasos, cucharitas y jarras
+              </li>
+            </ul>
+            <br />
+            <h6 id="sub-titulo-servicios">ESPACIOS DE JUEGOS:</h6>
 
-                <h6>VAJILLA: </h6>
+            <ul class="contenedor-nosotros">
+              <li class="listado-nosotros">
+                <img
+                  width="30"
+                  height="30"
+                  src="media/estrella.png"
+                  alt="logo-starfest"
+                />
+                Para habilitarlo será necesario contratar un profesor de Ed.
+                Física cada 10 niños, para cuidarlos y animar el evento
+              </li>
+            </ul>
 
-                
-                <ul class="contenedor-nosotros">
-                    <li class="listado-nosotros"> <img width="30" height="30" src="media/estrella.png" alt="logo-starfest"> Servilletas; vasos; cucharitas; jarras.</li>
-                </ul>
+            <br />
 
-                <h6>Espacios de juegos</h6>
+            <h6 id="sub-titulo-servicios">PERSONAL:</h6>
 
-                
-                <ul class="contenedor-nosotros">
-                    <li class="listado-nosotros"> <img width="30" height="30" src="media/estrella.png" alt="logo-starfest"> Para habilitarlo será necesario contratar un profesor de Ed. Física cada 10 niños, para cuidarlos y animar el evento.</li>
-                </ul>
-
-
-
-                <h6>Personal</h6>
-
-                
-                <ul class="contenedor-nosotros">
-                    <li class="listado-nosotros"> <img width="30" height="30" src="media/estrella.png" alt="logo-starfest"> 1 auxiliar de cocina</li>
-                    <li class="listado-nosotros"> <img width="30" height="30" src="media/estrella.png" alt="logo-starfest"> 2 meseras</li>
-
-                </ul>
-
-
-
-
+            <ul class="contenedor-nosotros">
+              <li class="listado-nosotros">
+                <img
+                  width="30"
+                  height="30"
+                  src="media/estrella.png"
+                  alt="logo-starfest"
+                />
+                1 auxiliar de cocina
+              </li>
+              <li class="listado-nosotros">
+                <img
+                  width="30"
+                  height="30"
+                  src="media/estrella.png"
+                  alt="logo-starfest"
+                />
+                2 meseras
+              </li>
+            </ul>
+          </div>
         </div>
+      </div>
+      <br />
     </div>
-</div>
-<br>
-</div>
 
-
-
-
-
-<br>
-<div class="adicionales">
-    <h2 class="titulo-adicionales">
-        <img width="50" height="50" src="media/estrella.png" alt="logo-starfest">
+    <br />
+    <div class="adicionales">
+      <h2 class="titulo-adicionales">
+        <img
+          class="logo-secciones"
+          src="media/estrella.png"
+          alt="logo-starfest"
+        />
         Adicionales
-    </h2>
-</div>
-
-<div class="box-contenedor">
-    <br>
-    <div class="menu-acordeon" id="accordion">
-        <div class="card">
-            <div class="card-header" id="headingOne">
-                <h5 class="mb-0 titulo-box" id="box-negro">
-                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                        <p class="titulo-box">Maquillaje artístico</p>
-                    </button>
-                </h5>
-            </div>
-            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
-                <div class="card-body">
-                    <p class="texto-box">Una maquilladora capacitada pinta los rostros de todos los niños, haciendo diseños en cara completa o algún detalle a elección de cada niño/a. Se utiliza el maquillaje correspondiente. 
-                    Duración: hasta finalizar de maquillar a los niños.</p>
-                </div>
-            </div>
-        </div>
-        <div class="card">
-            <div class="card-header" id="headingTwo">
-                <h5 class="mb-0 titulo-box" id="box-amarillo">
-                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                        <p class="titulo-box">Cascada de chocolate</p>
-                    </button>
-                </h5>
-            </div>
-            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-                <div class="card-body">
-                    <p class="texto-box">La cascada de chocolate estará disponible durante una hora. No incluye los alimentos que se sumergirán en el chocolate.</p>
-                </div>
-            </div>
-        </div>
-        <div class="card">
-            <div class="card-header" id="headingThree">
-                <h5 class="mb-0 titulo-box" id="box-negro">
-                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                        <p class="titulo-box">Show de magia</p>
-                    </button>
-                </h5>
-            </div>
-            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-                <div class="card-body">
-                    <p class="texto-box">Para el show de magia vienen dos magos preparados con sus propios materiales (trucos, busrbuja gigante, etc.). El servicio dura una hora y pueden participar tanto niños como adultos.</p>
-                </div>
-            </div>
-        </div>
-        <div class="card">
-            <div class="card-header" id="headingFour">
-                <h5 class="mb-0 titulo-box" id="box-amarillo">
-                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                        <p class="titulo-box">Candy Bar</p>
-                    </button>
-                </h5>
-            </div>
-            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
-                <div class="card-body">
-                    <p class="texto-box">El servicio de Candy Bar varía según lo que elija cada familia. Puede incluir:  bolsitas de golosinas, banderines, torta, frascos con golosinas, nombre del agazajado en fibrofácil, globos, panel de fondo decorado con telas/ lianas/ flores; soportes para tortas; mesa grande; mesa chica; mesas de apoyo, etc. Todo será personalizado según la temática elegida.</p>
-                </div>
-            </div>
-        </div>
-        <div class="card">
-            <div class="card-header" id="headingFive">
-                <h5 class="mb-0 titulo-box" id="box-negro">
-                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                        <p class="titulo-box">Robot Led</p>
-                    </button>
-                </h5>
-            </div>
-            <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
-                <div class="card-body">
-                    <p class="texto-box">El robot led se contrata con anticipación y el servicio dura media hora. Durante ese lapso de tiempo, bailarán, se tomarán fotos, jugarán con los laser.</p>
-                </div>
-            </div>
-        </div>
-        <div class="card">
-            <div class="card-header" id="headingSix">
-                <h5 class="mb-0 titulo-box" id="box-amarillo">
-                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                        <p class="titulo-box">Decoración de ambiente</p>
-                    </button>
-                </h5>
-            </div>
-            <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordion">
-                <div class="card-body">
-                    <p class="texto-box">Puede incluir decoración con telas en los diferentes espacios; globos, guirnaldas y banderines del color/temática a elección.</p>
-                </div>
-            </div>
-        </div>
-        <div class="card">
-            <div class="card-header" id="headingSeven">
-                <h5 class="mb-0 titulo-box" id="box-negro">
-                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
-                        <p class="titulo-box">Cabina de fotos</p>
-                    </button>
-                </h5>
-            </div>
-            <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordion">
-                <div class="card-body">
-                    <p class="texto-box">La cabina de fotos se contratará por una hora, y se podrá optar por diferentes opciones de cantidad de fotos e impresiones. Todas las fotos tomadas se guardarán en un cd para la familia.</p>
-                </div>
-            </div>
-        </div>
-        <div class="card">
-            <div class="card-header" id="headingEight">
-                <h5 class="mb-0 titulo-box" id="box-amarillo">
-                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
-                        <p class="titulo-box">Máquina de humo</p>
-                    </button>
-                </h5>
-            </div>
-            <div id="collapseEight" class="collapse" aria-labelledby="headingEight" data-parent="#accordion">
-                <div class="card-body">
-                    <p class="texto-box">La máquina de humo estará disponible durante media hora aproximadamente, en el momento de baile en la Mini Disco.</p>
-                </div>
-            </div>
-        </div>
-        <div class="card">
-            <div class="card-header" id="headingNine">
-                <h5 class="mb-0 titulo-box" id="box-negro">
-                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
-                        <p class="titulo-box">Máquina de pochoclos</p>
-                    </button>
-                </h5>
-            </div>
-            <div id="collapseNine" class="collapse" aria-labelledby="headingNine" data-parent="#accordion">
-                <div class="card-body">
-                    <p class="texto-box">La maquina de pochoclos estará disponible durante todo el evento, o hasta alcanzar las 70 bolsitas.</p>
-                </div>
-            </div>
-        </div>
-        <div class="card">
-            <div class="card-header" id="headingTen">
-                <h5 class="mb-0 titulo-box" id="box-amarillo">
-                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
-                        <p class="titulo-box">Máquina de espuma</p>
-                    </button>
-                </h5>
-            </div>
-            <div id="collapseTen" class="collapse" aria-labelledby="headingTen" data-parent="#accordion">
-                <div class="card-body">
-                    <p class="texto-box">La máquina de espuma estará disponible durante media hora aproximadamente, en el momento de baile en la Mini Disco.</p>
-                </div>
-            </div>
-        </div>
+      </h2>
     </div>
-    <br>
-</div>
 
+    <div class="box-contenedor">
+      <br />
+      <div class="menu-acordeon" id="accordion">
+        <div class="card">
+          <div class="card-header" id="headingOne">
+            <h5 class="mb-0 titulo-box" id="box-negro">
+              <button
+                class="btn btn-link"
+                data-toggle="collapse"
+                data-target="#collapseOne"
+                aria-expanded="true"
+                aria-controls="collapseOne"
+              >
+                <p class="titulo-box">Maquillaje artístico</p>
+              </button>
+            </h5>
+          </div>
+          <div
+            id="collapseOne"
+            class="collapse show"
+            aria-labelledby="headingOne"
+            data-parent="#accordion"
+          >
+            <div class="card-body">
+              <p class="texto-box">
+                Una maquilladora especializada pinta los rostros de los niños,
+                haciendo diseños en cara completa o algún detalle a elección de
+                cada uno de ellos. Duración: 2 horas.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingTwo">
+            <h5 class="mb-0 titulo-box" id="box-amarillo">
+              <button
+                class="btn btn-link collapsed"
+                id="palabra-larga"
+                data-toggle="collapse"
+                data-target="#collapseTwo"
+                aria-expanded="false"
+                aria-controls="collapseTwo"
+              >
+                <p class="titulo-box">Cascada de Chocolate o Queso Cheddar</p>
+              </button>
+            </h5>
+          </div>
+          <div
+            id="collapseTwo"
+            class="collapse"
+            aria-labelledby="headingTwo"
+            data-parent="#accordion"
+          >
+            <div class="card-body">
+              <p class="texto-box">
+                Contamos con diferentes opciones, en cuanto a precios y
+                alimentos. La cantidad y variedad de los mismos es a convenir.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingThree">
+            <h5 class="mb-0 titulo-box" id="box-negro">
+              <button
+                class="btn btn-link collapsed"
+                data-toggle="collapse"
+                data-target="#collapseThree"
+                aria-expanded="false"
+                aria-controls="collapseThree"
+              >
+                <p class="titulo-box">Shows especiales</p>
+              </button>
+            </h5>
+          </div>
+          <div
+            id="collapseThree"
+            class="collapse"
+            aria-labelledby="headingThree"
+            data-parent="#accordion"
+          >
+            <div class="card-body">
+              <p class="texto-box">
+                Diferentes alternativas a elegir, tanto para chicos como para
+                adultos (Magia; Circo; Karaoke, Stand Up). Los shows estarán a
+                cargo de artistas profesionales.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingFour">
+            <h5 class="mb-0 titulo-box" id="box-amarillo">
+              <button
+                class="btn btn-link collapsed"
+                data-toggle="collapse"
+                data-target="#collapseFour"
+                aria-expanded="false"
+                aria-controls="collapseFour"
+              >
+                <p class="titulo-box">Candy Bar</p>
+              </button>
+            </h5>
+          </div>
+          <div
+            id="collapseFour"
+            class="collapse"
+            aria-labelledby="headingFour"
+            data-parent="#accordion"
+          >
+            <div class="card-body">
+              <p class="texto-box">
+                El servicio de Candy Bar varía según lo que elija cada familia.
+                Puede incluir: bolsitas de golosinas, banderines, torta, frascos
+                con golosinas, nombre del agasajado, globos, panel de fondo
+                decorado con telas/ lianas/ flores; soportes para tortas; mesa
+                grande; mesa chica; mesas de apoyo, etc. Todo será personalizado
+                según la temática elegida.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingFive">
+            <h5 class="mb-0 titulo-box" id="box-negro">
+              <button
+                class="btn btn-link collapsed"
+                data-toggle="collapse"
+                data-target="#collapseFive"
+                aria-expanded="false"
+                aria-controls="collapseFive"
+              >
+                <p class="titulo-box">Robot Led</p>
+              </button>
+            </h5>
+          </div>
+          <div
+            id="collapseFive"
+            class="collapse"
+            aria-labelledby="headingFive"
+            data-parent="#accordion"
+          >
+            <div class="card-body">
+              <p class="texto-box">
+                El robot led se contrata con anticipación y el servicio dura 40
+                minutos. Durante ese lapso de tiempo, bailarán, se tomarán
+                fotos, jugarán con los laser.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingSix">
+            <h5 class="mb-0 titulo-box" id="box-amarillo">
+              <button
+                class="btn btn-link collapsed"
+                data-toggle="collapse"
+                data-target="#collapseSix"
+                aria-expanded="false"
+                aria-controls="collapseSix"
+              >
+                <p class="titulo-box">Decoración de ambiente</p>
+              </button>
+            </h5>
+          </div>
+          <div
+            id="collapseSix"
+            class="collapse"
+            aria-labelledby="headingSix"
+            data-parent="#accordion"
+          >
+            <div class="card-body">
+              <p class="texto-box">
+                Puede incluir decoración con telas en los diferentes espacios;
+                globos, guirnaldas y banderines del color/temática a elección.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingSeven">
+            <h5 class="mb-0 titulo-box" id="box-negro">
+              <button
+                class="btn btn-link collapsed"
+                data-toggle="collapse"
+                data-target="#collapseSeven"
+                aria-expanded="false"
+                aria-controls="collapseSeven"
+              >
+                <p class="titulo-box">Cabina de fotos</p>
+              </button>
+            </h5>
+          </div>
+          <div
+            id="collapseSeven"
+            class="collapse"
+            aria-labelledby="headingSeven"
+            data-parent="#accordion"
+          >
+            <div class="card-body">
+              <p class="texto-box">
+                La cabina de fotos se contratará por una hora, con fotos
+                ilimitadas durante ese período de tiempo. Se podrá contratar una
+                extensión del servicio. El material será enviado además por
+                email.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingNine">
+            <h5 class="mb-0 titulo-box" id="box-amarillo">
+              <button
+                class="btn btn-link collapsed"
+                data-toggle="collapse"
+                data-target="#collapseNine"
+                aria-expanded="false"
+                aria-controls="collapseNine"
+              >
+                <p class="titulo-box">Máquina de pochoclos</p>
+              </button>
+            </h5>
+          </div>
+          <div
+            id="collapseNine"
+            class="collapse"
+            aria-labelledby="headingNine"
+            data-parent="#accordion"
+          >
+            <div class="card-body">
+              <p class="texto-box">
+                La maquina de pochoclos estará disponible durante todo el
+                evento, o hasta alcanzar las 70 bolsitas.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingTen">
+            <h5 class="mb-0 titulo-box" id="box-negro">
+              <button
+                class="btn btn-link collapsed"
+                data-toggle="collapse"
+                data-target="#collapseTen"
+                aria-expanded="false"
+                aria-controls="collapseTen"
+              >
+                <p class="titulo-box">Máquina de espuma</p>
+              </button>
+            </h5>
+          </div>
+          <div
+            id="collapseTen"
+            class="collapse"
+            aria-labelledby="headingTen"
+            data-parent="#accordion"
+          >
+            <div class="card-body">
+              <p class="texto-box">
+                La máquina de espuma estará disponible durante media hora
+                aproximadamente, en el momento de baile en la Mini Disco.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br />
+    </div>
 
-<!-- FOOTER -->        
-<footer>
-    <br>
-    <br>
-    <div class="espaciofooter">.</div>
-    <ul class="menufooter">
-        <li> <a href="servicios.html">Servicios</a></li>
-        <li> <a href="galeria.html">Galería</a></li>
-        <li> <a href="nosotros.html">Nosotros</a></li>
-        <li> <a href="contacto.html">Contacto</a></li>
-    </ul>
-    <p class="contactofooter">Belgrano 958, San Miguel (C.P. 1663), Bs. As.
-        <br>
-        <br>
+    <!-- FOOTER -->
+    <footer>
+      <br />
+      <br />
+      <div class="espaciofooter">.</div>
+      <ul class="menufooter">
+        <li><a href="servicios.html">Servicios</a></li>
+        <li><a href="galeria.html">Galería</a></li>
+        <li><a href="nosotros.html">Nosotros</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+      <p class="contactofooter">
+        Belgrano 958, San Miguel (C.P. 1663), Bs. As.
+        <br />
+        <br />
         Tel: 11-3957-3358 | Email: starfestmultieventos@gmail.com
-    </p>
-
-    <a class="logofooter" title="logo-starfest" href="index.html"><img width="300" height="140" src="media/logo-starfest.png" alt="logo-starfest"></a>
-</footer>
-
-
-<script src="js/jquery.js"></script>
-<script src="js/bootstrap.bundle.min.js"></script>
-<script src="js/bootstrap.bundle.js"></script>
-
-</body>
+      </p>
+      <a class="logofooter" title="logo-starfest" href="index.html"
+        ><img
+          width="300"
+          height="140"
+          src="media/logo-starfest.png"
+          alt="logo-starfest"
+      /></a>
+    </footer>
+  </body>
 </html>

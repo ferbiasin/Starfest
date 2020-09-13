@@ -1,141 +1,178 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>Starfest Multieventos | Contacto</title>
-    <meta name="description" content="Starfest Multieventos, pedí tu presupuesto o escribinos tu consulta">
-    <meta name="keywords" content="Starfest, Multieventos, Contacto, Precios, Presupuesto">
-    <link rel="stylesheet" type="text/css" href="scss/styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&family=Raleway:ital,wght@0,300;0,400;0,600;0,700;0,900;1,400&display=swap" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <link rel="stylesheet" href="css/bootstrap.min.css"/>
-</head>
-<body>
+    <meta
+      name="description"
+      content="Starfest Multieventos, pedí tu presupuesto o escribinos tu consulta"
+    />
+    <meta
+      name="keywords"
+      content="Starfest, Multieventos, Contacto, Precios, Presupuesto"
+    />
+    <link rel="stylesheet" type="text/css" href="scss/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&family=Raleway:ital,wght@0,300;0,400;0,600;0,700;0,900;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header>
+      <a class="logo-header" title="logo-starfest" href="index.html"
+        ><img
+          class="logo-header"
+          src="media/logo-starfest.png"
+          alt="logo-starfest"
+      /></a>
+      <ul class="menu">
+        <li><a href="servicios.html">Servicios</a></li>
+        <li><a href="galeria.html">Galería</a></li>
+        <li><a href="nosotros.html">Nosotros</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </header>
 
-<!-- HEADER -->
+    <!-- TITULO SECCIÓN -->
+    <h1 class="texto-secciones">
+      <img
+        class="logo-secciones"
+        src="media/estrella.png"
+        alt="logo-starfest"
+      />
+      Contacto
+    </h1>
 
-<header>
-    <a class="logoheader" title="logo-starfest" href="index.html"><img class="logo1header" width="170" height="80" src="media/logo-starfest.png" alt="logo-starfest"></a>
-
-    <ul class="menu">
-        <li> <a href="servicios.html">Servicios</a></li>
-        <li> <a href="galeria.html">Galería</a></li>
-        <li> <a href="nosotros.html">Nosotros</a></li>
-        <li> <a href="contacto.html">Contacto</a></li>
-    </ul>
-</header>
-
-<h1 class="texto-secciones">
-    <img width="50" height="50" src="media/estrella.png" alt="logo-starfest">
-    Contacto
-</h1>
-      
-
-
-<!-- Material form contact -->
-<div class="card col-md-6 fomrulario-contacto" id="formulario">
-
-    <h5 class="card-header info-color white-text text-center py-4 titulos-contacto">
+    <!-- Material form contact -->
+    <div class="card col-md-6 fomrulario-contacto" id="formulario">
+      <h5
+        class="card-header info-color white-text text-center py-4 titulos-contacto"
+      >
         <strong>¡Escribinos!</strong>
-    </h5>
+      </h5>
 
-    <!--Card content-->
-    <div class="card-body px-lg-5 pt-0">
-
+      <!--Card content-->
+      <div class="card-body px-lg-5 pt-0">
         <!-- Form -->
-        <form class="text-center" style="color: #d3d3d3;" action="#!">
+        <form class="text-center" style="color: #d3d3d3" action="#!">
+          <!-- Name -->
+          <div class="md-form mt-3">
+            <input
+              type="text"
+              id="materialContactFormName"
+              class="form-control"
+            />
+            <label for="materialContactFormName">Nombre y Apellido</label>
+          </div>
 
-            <!-- Name -->
-            <div class="md-form mt-3">
-                <input type="text" id="materialContactFormName" class="form-control">
-                <label for="materialContactFormName">Nombre y Apellido</label>
-            </div>
+          <!-- Telephone -->
+          <div class="md-form">
+            <input
+              type="text"
+              id="materialContactFormTelephone"
+              class="form-control"
+            />
+            <label for="materialContactForTelephone">Número de teléfono</label>
+          </div>
+          <!-- E-mail -->
+          <div class="md-form">
+            <input
+              type="email"
+              id="materialContactFormEmail"
+              class="form-control"
+            />
+            <label for="materialContactFormEmail">E-mail</label>
+          </div>
+          <!-- Subject -->
+          <span>Motivo de la consulta: </span>
+          <select class="mdb-select" id="motivo-consulta">
+            <option value="" disabled>Elegí una opción</option>
+            <option value="1">Cumpleaños infantil</option>
+            <option value="2">Cumpleaños adulto</option>
+            <option value="3">Fiesta de 15</option>
+            <option value="4">Baby Shower</option>
+            <option value="5">Primer año</option>
+            <option value="6">Bautismo</option>
+            <option value="7">Comunión</option>
+            <option value="8">Confirmación</option>
+            <option value="9">Egresos</option>
+            <option value="10">Evento empresarial</option>
+            <option value="11">Otros</option>
+          </select>
+          <br />
+          <br />
+          <!--Message-->
+          <div class="md-form">
+            <textarea
+              id="materialContactFormMessage"
+              class="form-control md-textarea"
+              rows="3"
+            ></textarea>
+            <label for="materialContactFormMessage">Mensaje</label>
+          </div>
 
-            <!-- E-mail -->
-            <div class="md-form">
-                <input type="email" id="materialContactFormEmail" class="form-control">
-                <label for="materialContactFormEmail">E-mail</label>
-            </div>
-            <br>
-            <!-- Subject -->
-            <span>Motivo de la consulta: </span>
-            <select class="mdb-select" id="tuco">
-                <option value="" disabled>Elegí una opción</option>
-                <option value="1">Cumpleaños infantil</option>
-                <option value="2">Cumpleaños adulto</option>
-                <option value="3">Fiesta de 15</option>
-                <option value="4">Baby Shower</option>
-                <option value="5">Primer año</option>
-                <option value="6">Bautismo</option>
-                <option value="7">Comunión</option>
-                <option value="8">Confirmación</option>
-                <option value="9">Egresos</option>
-                <option value="10">Evento empresarial</option>
-                <option value="11">Otros</option>
-            </select>
-<br>
-<br>
-            <!--Message-->
-            <div class="md-form">
-                <textarea id="materialContactFormMessage" class="form-control md-textarea" rows="3"></textarea>
-                <label for="materialContactFormMessage">Mensaje</label>
-            </div>
+          <!-- Send button -->
 
-            <!-- Copy -->
-            <div class="form-check">
-                <input type="checkbox" class="form-check-input" id="materialContactFormCopy">
-                <label class="form-check-label" for="materialContactFormCopy">Enviar una copia de este mensaje</label>
-            </div>
-
-            <!-- Send button -->
-      
-            <button class="btn btn-outline-info btn-rounded btn-block z-depth-0 my-4 waves-effect" id="btn-contacto" type="submit">Enviar mensaje</button>
-
+          <button
+            class="btn btn-outline-info btn-rounded btn-block z-depth-0 my-4 waves-effect"
+            id="btn-contacto"
+            type="submit"
+          >
+            Enviar mensaje
+          </button>
         </form>
         <!-- Form -->
+      </div>
+    </div>
+    <!-- Material form contact -->
 
+    <div class="mapa">
+      <h5 class="card-header info-color text-center py-4 titulos-contacto">
+        <strong>¿Dónde estamos?</strong>
+      </h5>
+      <iframe
+        class="col-md-6"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3286.4941893743385!2d-58.71140538538618!3d-34.54104088047574!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcbd12011d5151%3A0x2d2970ac365d6bd8!2sBelgrano%20958%2C%20B1663NLS%20San%20Miguel%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1598131365683!5m2!1ses!2sar"
+        width="600"
+        height="450"
+        frameborder="0"
+        style="border: 0"
+        allowfullscreen=""
+        aria-hidden="false"
+        tabindex="0"
+      ></iframe>
     </div>
 
-</div>
-<!-- Material form contact -->
-
-
-<div class="mapa">
-    <h5 class="card-header info-color text-center py-4 titulos-contacto">
-        <strong>¿Dónde estamos?</strong>
-    </h5>
-<iframe class="col-md-6"  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3286.4941893743385!2d-58.71140538538618!3d-34.54104088047574!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcbd12011d5151%3A0x2d2970ac365d6bd8!2sBelgrano%20958%2C%20B1663NLS%20San%20Miguel%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1598131365683!5m2!1ses!2sar" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-</div>
-
-
-
-
-
-
-<!-- FOOTER -->        
-<footer>
-    <br>
-    <br>
-    <div class="espaciofooter">.</div>
-    <ul class="menufooter">
-        <li> <a href="servicios.html">Servicios</a></li>
-        <li> <a href="galeria.html">Galería</a></li>
-        <li> <a href="nosotros.html">Nosotros</a></li>
-        <li> <a href="contacto.html">Contacto</a></li>
-    </ul>
-    <p class="contactofooter">Belgrano 958, San Miguel (C.P. 1663), Bs. As.
-        <br>
-        <br>
+    <!-- FOOTER -->
+    <footer>
+      <br />
+      <br />
+      <div class="espaciofooter">.</div>
+      <ul class="menufooter">
+        <li><a href="servicios.html">Servicios</a></li>
+        <li><a href="galeria.html">Galería</a></li>
+        <li><a href="nosotros.html">Nosotros</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+      <p class="contactofooter">
+        Belgrano 958, San Miguel (C.P. 1663), Bs. As.
+        <br />
+        <br />
         Tel: 11-3957-3358 | Email: starfestmultieventos@gmail.com
-    </p>
-
-    <a class="logofooter" title="logo-starfest" href="index.html"><img width="300" height="140" src="media/logo-starfest.png" alt="logo-starfest"></a>
-</footer>
-
-
-<script src="js/jquery.js"></script>
-<script src="js/bootstrap.bundle.min.js"></script>
-<script src="js/bootstrap.bundle.js"></script>
-
-</body>
+      </p>
+      <a class="logofooter" title="logo-starfest" href="index.html"
+        ><img
+          width="300"
+          height="140"
+          src="media/logo-starfest.png"
+          alt="logo-starfest"
+      /></a>
+    </footer>
+  </body>
 </html>

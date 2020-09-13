@@ -1,51 +1,44 @@
 /**     ----------- FOOTER  -----------   **/
-
-
-
-footer{
-    background-color: black;
+footer {
+  background-color: black;
 }
 
-
-.espaciofooter{
-    background-color: #C68624;
-    color: #C68624;
-    font-size: 0.1rem;
+.espaciofooter {
+  background-color: #c68624;
+  color: #c68624;
+  font-size: 0.1rem;
 }
 
-.logofooter{
-    padding: 0 0 0 37%;
+.logofooter {
+  padding: 0 0 0 37%;
 }
 
-@media (max-width: 768px){
-    .logofooter{
-        padding: 0 0 0 5%;
-        width: 200px;
-        height: 93px;
-    }
+@media (max-width: 768px) {
+  .logofooter {
+    padding: 0 0 0 5%;
+  }
 }
 
 .menufooter {
-    list-style: none;
-    padding: 2% 0 0 5%;
+  list-style: none;
+  padding: 2% 0 0 5%;
 }
 
-.menufooter li a{
-    margin: 0 100px 20px 100px;
-    position: relative; 
-    float: left;
-    background-color:#000000 ;
-    color: #C68624;
+.menufooter li a {
+  margin: 0 100px 20px 100px;
+  position: relative;
+  float: left;
+  background-color: #000000;
+  color: #c68624;
 }
 
-@media (max-width: 768px){
-    .menufooter li a{
+@media (max-width: 768px) {
+  .menufooter li a {
     margin: 10px 8px 20px 8px;
-    }
+  }
 }
 
-
-.contactofooter{
-    text-align: center;
-    color: white;
+.contactofooter {
+  text-align: center;
+  color: white;
 }
